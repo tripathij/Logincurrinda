@@ -3,6 +3,7 @@ package Authentication;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,8 +23,7 @@ public class Loginpages {
 	password.sendKeys("playbill2");
 	
 	WebElement loginbutton =driver.findElement(By.xpath("//button[text()='Sign in']"));
-	loginbutton.click();
-	
+	loginbutton.sendKeys(Keys.ENTER);
 	 String expectedtitle =driver.getTitle();
 	
 	  String actualtitle ="Login | Currinda";
