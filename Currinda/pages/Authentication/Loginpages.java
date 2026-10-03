@@ -40,7 +40,6 @@ public class Loginpages {
 	  
 	
 	
-	driver.close();
 	
 	 
  }
