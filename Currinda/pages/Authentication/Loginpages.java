@@ -38,7 +38,7 @@ public class Loginpages {
 	  System.out.println("testcase is failed : "  +expectedtitle);
 	 }
 	  
-	
+	driver.quit();
 	
 	
 	 
